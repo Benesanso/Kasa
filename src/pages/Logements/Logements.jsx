@@ -1,9 +1,10 @@
 import React from 'react';
 import Carrousel from '../../components/Caroussel/carrousel';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import logements from '../../data/logements.json';
 import Rating from '../../components/Rating/Rating';
-import Collapse from '../../components/Collapse/collapse'
+import Collapse from '../../components/Collapse/collapse';
+
 import './logements.scss'
 
 const Logement = () => {
@@ -51,7 +52,7 @@ const Logement = () => {
         
      </main>
   ):(
-    <div>logement non trouvé</div>
+    <Navigate replace to="../../components/ErrorPage/ErrorPage" /> 
   )
 };
 export default Logement;
