@@ -1,3 +1,4 @@
+/*Desktop*/
 .collapse {
     position: relative;
     flex-direction:column;
@@ -55,4 +56,24 @@
     height: 30px;
     transform: rotate(180deg);
     cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px){
+    .collapse{
+        padding: 0px 10px 0px 10px;  
+}
+    .collapse-header {
+        height:30px; 
+}
+
+    .collapse-title {
+        font-size: 13px;
+}
+    .collapse-text {
+        font-size: 13px; 
+}
+    .collapse-icon{
+        height: 20px; 
+}
 }

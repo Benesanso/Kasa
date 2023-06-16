@@ -30,27 +30,20 @@ const Logement = () => {
            ))}
            
       </div>
-      <Rating rating={appart.rating} /> 
+        <Rating rating={appart.rating} /> 
       </section>
       <section className='location-info'>
-            <div className='collapse-container-1'>
-                <Collapse 
-                title= "Description"
-                content= {appart.description}
-                />
-            </div>
-            <div className='collapse-container-2'>
-                <Collapse 
-                title="Equipement"
-                content={
-                  <ul>{appart.equipments.map((equipment) => 
-                    <li key={equipment}>{equipment}</li>)}
-                  </ul>}
-                />
-            </div> 
-        </section>
+        <div className='collapse-container-1'>
+          <Collapse  title= "Description" content= {appart.description}/>
+        </div>
+        <div className='collapse-container-2'>
+          <Collapse title="Equipement" content={<ul>{appart.equipments.map((equipment) => 
+            <li key={equipment}>{equipment}</li>)}
+              </ul>} />
+        </div> 
+      </section>
         
-     </main>
+    </main>
   ):(
     <Navigate replace to="../../components/ErrorPage/ErrorPage" /> 
   )
