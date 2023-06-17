@@ -12,11 +12,11 @@ function Collapse({ title, content, }) {
  
   return (
     <div className="collapse">
-        <h2 className='collapse-title'>{title}</h2>
+      <h2 className='collapse-title'>{title}</h2>
         <button className="collapse-header">
-        <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} className="collapse-icon" onClick={toggleCollapse} />
-      </button>
-      {isOpen && (
+          <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} className="collapse-icon" onClick={toggleCollapse} />
+        </button>
+          {isOpen && (
         <div className="collapse-content-container">
           <div className='collapse-content'>
             <div className='collapse-text'>{content}</div>

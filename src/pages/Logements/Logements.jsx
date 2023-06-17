@@ -13,36 +13,40 @@ const Logement = () => {
    const appart = logements.find((appart)=>appart.id === logementId)
   return appart ? (
    <main>
-       <Carrousel appartPicture={appart.pictures}/>
-       <section className='title-appart'>
-        <p>{appart.title}</p>
-        <span className='host'>
-        <div className='host-name'>{appart.host.name} </div> 
-        <img className='host-picture' src={appart.host.picture} alt="" />
-        </span>
-       </section>
-       <section className='location-appart'>
-        <p>{appart.location}</p>
-       </section>
-      <section className='notation'>
-      <div className='tags'>{appart.tags.map((tag, index) => (
-           <span className='tag' key={index}>{tag}</span>
+      <Carrousel appartPicture={appart.pictures}/>
+
+      <section className='location'>
+        <div className='location-header'>
+          <p className='title-appart' >{appart.title}</p>
+          <p className='title-city' >{appart.location}</p>
+          <div className='tags'>{appart.tags.map((tag, index) => (
+            <span className='tag' key={index}>{tag}</span>
            ))}
-           
-      </div>
-        <Rating rating={appart.rating} /> 
-      </section>
-      <section className='location-info'>
-        <div className='collapse-container-1'>
+          </div>
+        </div>
+
+      <div className='location-host'>
+        <div className='host'>
+          <div className='host-name'>{appart.host.name} </div> 
+          <img className='host-picture' src={appart.host.picture} alt="" />
+        </div>
+        <div className='notation'>
+          <Rating rating={appart.rating} /> 
+        </div>
+       </div>
+      </section> 
+      <div className='location-info'>
+        <div className='collapse-container'>
           <Collapse  title= "Description" content= {appart.description}/>
         </div>
-        <div className='collapse-container-2'>
+        <div className='collapse-container'>
           <Collapse title="Equipement" content={<ul>{appart.equipments.map((equipment) => 
             <li key={equipment}>{equipment}</li>)}
               </ul>} />
         </div> 
-      </section>
-        
+      </div>
+
+   
     </main>
   ):(
     <Navigate replace to="../../components/ErrorPage/ErrorPage" /> 

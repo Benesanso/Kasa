@@ -32,6 +32,14 @@
     color: #FF6060 !important;;
 }
 
+/*Breakpoint*/
+@media (min-width: 1200px) and (max-width: 1900px){
+    .container{
+        padding:20px 100px 0px 50px;
+        margin-bottom: 30px;
+}
+}
+
 /* Tablette */
 @media (min-width: 992px) and (max-width: 1199px){
     .container{
@@ -54,7 +62,7 @@
         box-sizing:content-box;
         width: 90%;
         margin-bottom: 20px;
-        padding: 0px 0px 0px 30px;
+        padding: 0px 110px 0px 20px;
 }
     .container img {
         height: 40px;

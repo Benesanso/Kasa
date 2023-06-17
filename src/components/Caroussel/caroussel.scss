@@ -77,10 +77,10 @@
     font-weight: 500;
     font-size: 18px;
 }
-
+/*Breakpoint*/
 @media (min-width: 1200px) and (max-width: 1900px){
     .carousel{
-       margin-left: 60px;
+       margin-left: 35px;
        padding: 0px;
         }
         .next {
@@ -113,7 +113,7 @@
 /* Mobile */
 @media (max-width: 767px){
     .carousel{
-    margin:30px ;
+    margin:22px ;
     padding: 0px;
 }
     .carousel-images{

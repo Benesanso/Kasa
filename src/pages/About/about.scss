@@ -22,8 +22,15 @@
 }
 
 .section-about{
+    display:flex;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 50px;
+}
+.collapse-about-container{
+  
+    width: 100%;
+    
 }
 
 /* Tablette */
