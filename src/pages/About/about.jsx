@@ -25,12 +25,11 @@ const collapseAbout = [
 
 function banner() {
   return (
-    <div>
-      <div className='banner-about'>
-        <article className='banner'>
+    <div className=' main-about'>
+        <article className='banner-about'>
           <img className='banner-img' src={About} alt='Vue des montagnes'/>
         </article>
-      </div>
+     
       <section className='section-about'>
       {collapseAbout.map((collapse, index) => (
           <div className='collapse-about-container' key={index}>

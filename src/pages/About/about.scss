@@ -1,19 +1,21 @@
 /*Desktop*/
-.banner-about{
+.main-about{
     background-color: white;
     padding: 0 6%;
 }
     
-.banner {
+.banner-about {
     display:flex;
+    position: relative;
     background: rgba(0,0,0,.8);
     border-radius: 25px;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+    height : 223px;
 }
 
-.banner-img{
+.banner-about-img{
     width: 100%;
     height: 100%;
     margin: auto;
@@ -25,60 +27,51 @@
     display:flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 50px;
+    margin-top : 30px;
+    margin-bottom : 30px;
+    gap: 30px;
 }
 .collapse-about-container{
-  
     width: 100%;
-    
 }
 
 /* Tablette */
 @media (min-width: 992px) and (max-width: 1199px){
-    .banner{
+    .banner-about{
         border-radius: 10px;
 }
-    .banner-img{
+    .banner-img-about-img{
         border-radius: 10px;
 }
 }
 
 /*Tablette en mode portrait*/
 @media (min-width: 768px) and (max-width: 991px){
-    .banner{
+    .banner-about{
         border-radius: 10px;
 }
-    .banner-img{
+    .banner-about-img{
         border-radius: 10px;
-}
-.banner-about {
-    width: 90%;
-    height: 223px;
-    margin: 0px 0px 0px 30px; 
-    padding: 0px; 
-}
 }
 
-/* Mobile */
-@media (max-width: 767px){
-    .banner-about {
-        width: 90%;
-        height: 223px;
-        margin: 0px 0px 0px 30px; 
-        padding: 0px; 
 }
-    .banner{
+
+/*Mobile taille inférieure*/
+@media (min-width: 375px) and (max-width: 766px){
+    .banner-about{
         border-radius: 10px;
 }
-    .banner-img{
+    .banner-about-img{
         border-radius: 10px;
 }
 }
 
 @media (min-width: 280px) and (max-width: 374px){
-    .banner-about {
-        width: 90%;
-        height: 223px;
-        margin: 0px 0px 0px 15px; 
+    .banner-about{
+        border-radius: 10px;
+}
+    .banner-about-img{
+        border-radius: 10px;
 }
 }
+   

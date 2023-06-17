@@ -42,7 +42,6 @@
 .footer-logo{
     width: 25%;
     margin-top: 120px;
-    
 }
 .footer-info {
     width: 15%;
@@ -54,9 +53,45 @@
 }
 }
 
-@media (max-width: 375px){
+/*Mobile taille inférieure*/
+@media (min-width: 375px) and (max-width: 766px){
     .footer{
-        height: 320px;
-       
+        height: 300px;
+        width: 100%;
+    }
+    
+    .footer-logo{
+        width: 25%;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+    .footer-info {
+        width: 35%;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0px;
+    }
+}
+@media (min-width: 280px) and (max-width: 374px){
+    .footer{
+        height: 300px;
+        width: 100%;
+    }
+    .footer-logo{
+        width: 25%;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+    .footer-info {
+        width: 35%;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0px;
     }
 }
