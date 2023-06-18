@@ -9,7 +9,6 @@ import './logements.scss'
 
 const Logement = () => {
   const {logementId} = useParams()
-  console.log(logements);
    const appart = logements.find((appart)=>appart.id === logementId)
   return appart ? (
    <main>

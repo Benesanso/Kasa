@@ -3,7 +3,6 @@ import logements from '../../data/logements.json';
 import '../Gallery/gallery.scss';
 
 function Gallery() {
-  console.log(logements);
   return (
     <main className="gallery">
       {logements.map((data) => (
