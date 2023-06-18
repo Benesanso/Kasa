@@ -23,48 +23,63 @@
     margin-bottom: 30px;
 }
 
+/*Breakpoints*/
+
 /* Tablette */
-@media (max-width: 992px){
-.footer{
-    height: 209px;
-}
-.footer-info{
-    font-size: 12px;
-}
+@media (min-width: 992px) and (max-width: 1199px){
+    .footer{
+        height: 250px;
+    }
+    .footer-logo{
+        width: 20%;
+    }
 }
 
+/* Tablette plus petite */
+@media (max-width: 992px){
+    .footer{
+        height: 209px;
+}
+    .footer-info{
+        font-size: 12px;
+}
+}
+    
 /* Mobile */
 @media (max-width: 768px){
-.footer{
-    height: 420px;
-    width: 100%;
+    .footer{
+        height: 250px;
+        width: 100%;
+        margin-top: 30px;
 }
-.footer-logo{
-    width: 25%;
-    margin-top: 120px;
+    .footer-logo{
+        width: 20%;
+        margin-top: 90px;
+        margin-bottom: 10px;
 }
-.footer-info {
-    width: 15%;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: center;
+
+    .footer-info {
+        width: 15%;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center; 
 }
 }
 
 /*Mobile taille inférieure*/
 @media (min-width: 375px) and (max-width: 766px){
     .footer{
-        height: 300px;
+        height: 250px;
         width: 100%;
-    }
-    
+        margin-top: 30px;
+}
     .footer-logo{
         width: 25%;
         margin-top: 100px;
         margin-bottom: 10px;
-    }
+}
     .footer-info {
         width: 35%;
         font-size: 12px;
@@ -73,18 +88,20 @@
         letter-spacing: 0em;
         text-align: center;
         margin: 0px;
-    }
 }
+}
+
 @media (min-width: 280px) and (max-width: 374px){
     .footer{
-        height: 300px;
+        height: 250px;
         width: 100%;
-    }
+        margin-top: 30px;
+}
     .footer-logo{
         width: 25%;
         margin-top: 100px;
         margin-bottom: 10px;
-    }
+}
     .footer-info {
         width: 35%;
         font-size: 12px;
@@ -93,5 +110,5 @@
         letter-spacing: 0em;
         text-align: center;
         margin: 0px;
-    }
+}
 }

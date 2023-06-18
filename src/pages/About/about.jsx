@@ -1,5 +1,6 @@
 import React from 'react';
 import About from '../../assets/background-about.png';
+import AboutMobile from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2 (1).png';
 import './about.scss';
 import Collapse from '../../components/Collapse/collapse'
 
@@ -28,6 +29,7 @@ function banner() {
     <div className=' main-about'>
         <article className='banner-about'>
           <img className='banner-img' src={About} alt='Vue des montagnes'/>
+          <img className='banner-img-mobile' src={AboutMobile} alt='Vue des montagnes'/>
         </article>
      
       <section className='section-about'>

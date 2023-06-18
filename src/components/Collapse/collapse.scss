@@ -58,17 +58,80 @@
     cursor: pointer;
 }
 
-/* Mobile */
-@media (max-width: 768px){
+/*Breakpoints*/
+@media (min-width: 1500px) and (max-width: 3000px){
     .collapse{
-        padding: 0px 10px 0px 10px;  
+        padding: 0px;
+        margin: 0px; 
 }
-    .collapse-header {
-        height:30px; 
 }
 
+@media (min-width: 1200px) and (max-width: 1900px){
+    .collapse{
+        padding: 0px;
+        margin: 0px; 
+}
+}
+
+/* Tablette */
+@media (min-width: 992px) and (max-width: 1199px){
+    .collapse{
+        padding: 0px;
+        margin: 0px; 
+}
+}
+/* Mobile */
+@media (max-width: 768px){
+ 
     .collapse-title {
         font-size: 13px;
+        margin-top: 5px;
+        padding-left:10px;
+}
+.collapse-header {
+    height:30px;
+    border-radius: 5px;
+}
+.collapse-icon{
+    padding-right: 20px; 
+    padding-left: 20px;
+    height: 16px;
+}
+}
+
+/*Tablette en mode portrait*/
+@media (min-width: 767px) and (max-width: 991px){
+    .collapse{
+        padding: 0px;
+        margin: 0px; 
+}
+}
+
+/*Mobile taille inférieure*/
+@media (min-width: 375px) and (max-width: 766px){
+    .collapse{
+        padding: 0px;
+        margin: 0px;
+        height: 40px;
+}
+    .collapse-title {
+        font-size: 13px;
+        margin-top: 10px;
+        padding-left:10px;
+}
+}
+
+@media (min-width: 280px) and (max-width: 374px){
+    .collapse{
+        padding: 0px;  
+}
+    .collapse-header {
+        height:40px; 
+}
+    .collapse-title {
+        font-size: 13px;
+        margin-top: 10px;
+        padding-left:10px;
 }
     .collapse-text {
         font-size: 13px; 
