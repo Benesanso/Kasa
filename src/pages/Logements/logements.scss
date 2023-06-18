@@ -146,9 +146,10 @@
         width: 100%;
 }
    .host{
-        margin-right: 0px;
+        margin-right: 25px;
         width: 20%;
-    }
+        gap: 10px;
+}
     .host-picture{
         width: 50%;
 }
@@ -199,7 +200,7 @@
         flex-direction:row-reverse;
         justify-content: space-between;
         align-items: center;
-        padding-right: 40px;
+        padding-right: 0px;
 }
     .notation{
         margin: 0px;
@@ -208,6 +209,7 @@
 }
     .host{
         justify-content: flex-end;
+        margin-right: 30px;
 }
    .host-name{
         font-size: 12px;
@@ -226,12 +228,12 @@
 }
    .collapse-container{
     width: 100%;
-    padding: 20px 60px 0px 40px;
+    padding: 20px 50px 0px 40px;
 }
 }
 
 /*Mobile taille inférieure*/
-@media (min-width: 375px) and (max-width: 766px){
+@media (min-width: 375px) and (max-width: 767px){
     .location{
         margin-left: 20px;
         margin-top: 10px;
