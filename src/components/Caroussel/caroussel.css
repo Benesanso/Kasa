@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/*Bloc caroussel*/
+.carousel {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 415px;
+  padding: 0px 10%;
+  margin-bottom: 30px;
+}
+.carousel .images {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.slider-image {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  border-radius: 25px;
+  width: 100%;
+  height: 415px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/*Icone image suivante*/
+.next {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  top: 40%;
+  right: 0;
+  padding-right: 240px;
+  z-index: 2;
+}
+.next .chevron-icon-right {
+  position: absolute;
+  height: 50px;
+  color: white;
+}
+
+/*Icone image précédente*/
+.prev {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  top: 40%;
+  z-index: 2;
+}
+.prev .chevron-icon-left {
+  position: absolute;
+  height: 50px;
+  color: white;
+}
+
+.number-image {
+  color: white;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/*Breakpoint*/
+/* Tablette */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel {
+    margin-bottom: 25px;
+    margin-left: 50px;
+    padding: 0px;
+  }
+}
+/* Mobile */
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel {
+    margin-left: 30px;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+  .number-image {
+    font-size: 20px;
+  }
+  .next {
+    top: 40%;
+    padding-right: 40px;
+  }
+  .prev {
+    top: 40%;
+    padding-left: 10px;
+  }
+  .chevron-icon-left {
+    height: 30px;
+  }
+  .chevron-icon-right {
+    height: 30px;
+  }
+  .number-image {
+    left: 45%;
+  }
+}
+/*Mobile taille inférieure*/
+@media (min-width: 375px) and (max-width: 767px) {
+  .carousel {
+    height: 255px;
+    margin: 0px;
+    margin-left: 20px;
+    padding: 0px;
+  }
+  .carousel-images {
+    height: 255px;
+    border-radius: 10px;
+  }
+  .slider-image {
+    height: 255px;
+  }
+  .next {
+    top: 40%;
+    padding-right: 40px;
+  }
+  .prev {
+    top: 40%;
+    padding-left: 10px;
+  }
+  .chevron-icon-left {
+    height: 30px;
+  }
+  .chevron-icon-right {
+    height: 30px;
+  }
+  .number-image {
+    left: 45%;
+  }
+}
+@media (min-width: 280px) and (max-width: 374px) {
+  .carousel {
+    height: 255px;
+    margin: 0px 0px 20px 15px;
+    padding: 0px;
+    width: 92%;
+  }
+  .carousel-images {
+    height: 255px;
+    border-radius: 10px;
+  }
+  .next {
+    top: 40%;
+    padding-right: 40px;
+  }
+  .prev {
+    top: 40%;
+    padding-left: 10px;
+  }
+  .chevron-icon-left {
+    height: 30px;
+  }
+  .chevron-icon-right {
+    height: 30px;
+  }
+  .number-image {
+    left: 45%;
+  }
+}/*# sourceMappingURL=caroussel.css.map */

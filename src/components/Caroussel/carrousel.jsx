@@ -5,6 +5,7 @@ import { useState } from 'react';
 
   const Carrousel = ({appartPicture}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
+
   const nextSlide = () => {
     setCurrentSlide((currentSlide +1)% appartPicture.length);
    };

@@ -1,8 +1,10 @@
-.rating-icon{
-    height: 24px;
-    margin: 5px;
+.rating{
+    & .icon{
+        height: 24px;
+        margin: 5px;
+    }
+    
 }
-
 @media (min-width: 280px) and (max-width: 374px){
     .rating-icon{
         height: 15px;

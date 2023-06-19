@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/*Desktop*/
+.collapse {
+  flex-direction: column;
+  display: flex;
+  padding: 0 6%;
+  margin-top: 20px;
+  width: 100%;
+}
+.collapse .header {
+  justify-content: flex-end;
+  background-color: #FF6060;
+  border-radius: 5px;
+  color: white;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+.collapse .header .icon {
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Effet visuel de rotation */
+}
+.collapse .header .rotate {
+  transform: rotate(180deg);
+}
+.collapse .title {
+  display: flex;
+  margin: 7px 0px 0px 0px;
+  color: white;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  align-items: flex-start;
+  padding-left: 18px;
+  line-height: 142.6%;
+  position: absolute;
+}
+.collapse .content-container {
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  display: flex;
+  height: auto;
+}
+.collapse .content-container .text {
+  display: flex;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FF6060;
+  line-height: 142.6%;
+  padding: 20px;
+}
+
+/*Breakpoints*/
+/* Tablette */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .collapse {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+/*Tablette en mode portrait*/
+@media (min-width: 766px) and (max-width: 991px) {
+  .collapse {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+/* Mobile */
+@media (max-width: 768px) {
+  .collapse-title {
+    font-size: 13px;
+    margin-top: 5px;
+    padding-left: 10px;
+  }
+  .collapse-header {
+    height: 30px;
+    border-radius: 5px;
+  }
+  .collapse-icon {
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 16px;
+  }
+}
+/*Mobile taille inférieure*/
+@media (min-width: 375px) and (max-width: 766px) {
+  .collapse {
+    padding: 0px;
+    margin: 0px;
+    height: 40px;
+  }
+  .collapse .title {
+    font-size: 13px;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  .collapse .header .icon {
+    height: 20px;
+  }
+  .collapse .content-container .text {
+    font-size: 13px;
+  }
+}
+@media (min-width: 280px) and (max-width: 374px) {
+  .collapse {
+    padding: 0px;
+  }
+  .collapse .title {
+    font-size: 13px;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  .collapse .header {
+    height: 40px;
+  }
+  .collapse .header .icon {
+    height: 20px;
+  }
+  .collapse .content-container .text {
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=collapse.css.map */

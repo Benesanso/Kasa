@@ -3,22 +3,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.error-title{
-    display: flex;
-    color: #FF6060;
-    font-size: 288px;
-    font-weight: 700;
-    line-height: 410.69px;
-}
+    & .title{
+        display: flex;
+        color: #FF6060;
+        font-size: 288px;
+        font-weight: 700;
+        line-height: 410.69px;
+    }
 
-.error-text{
-    display: flex;
-    color: #FF6060;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 51.34px;
+    & .text{
+        display: flex;
+        color: #FF6060;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 51.34px;
+    }   
 }
 
 .back-home{
@@ -26,7 +26,7 @@
     font-size: 18px;
     line-height: 142.6%;
     display: flex;
-   text-decoration-line: underline;
+    text-decoration-line: underline;
     text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;

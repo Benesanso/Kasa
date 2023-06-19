@@ -7,7 +7,7 @@ function Gallery() {
   return (
     <main className="gallery">
       {logements.map((data) => (
-        <Link to={`/logements/${data.id}`} className='gallery-card' key={data.id}>
+        <Link to={`/logements/${data.id}`} className='card' key={data.id}>
           <Card cover = {data.cover} alt={data.title} title = {data.title} />
             <span className="background"></span>
         </Link>

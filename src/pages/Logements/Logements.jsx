@@ -4,7 +4,7 @@ import { Navigate, useParams } from 'react-router-dom';
 import logements from '../../data/logements.json';
 import Rating from '../../components/Rating/Rating';
 import Collapse from '../../components/Collapse/collapse';
-
+import Tag from '../../components/Tags/Tags';
 import './logements.scss'
 
 const Logement = () => {
@@ -15,25 +15,23 @@ const Logement = () => {
       <Carrousel appartPicture={appart.pictures}/>
 
       <section className='location'>
-        <div className='location-header'>
-          <p className='title-appart' >{appart.title}</p>
-          <p className='title-city' >{appart.location}</p>
-          <div className='tags'>{appart.tags.map((tag, index) => (
-            <span className='tag' key={index}>{tag}</span>
-           ))}
-          </div>
+        <div className='header'>
+          <p className='appart' >{appart.title}</p>
+          <p className='city' >{appart.location}</p>
+          <Tag appartTag={appart.tags}/>
         </div>
 
         <div className='location-host'>
           <div className='host'>
-            <div className='host-name'>{appart.host.name} </div> 
-            <img className='host-picture' src={appart.host.picture} alt="" />
+            <div className='name'>{appart.host.name} </div> 
+            <img className='picture' src={appart.host.picture} alt="" />
           </div>
           <div className='notation'>
             <Rating rating={appart.rating} /> 
           </div>
         </div>
       </section> 
+
       <div className='location-info'>
         <div className='collapse-container'>
           <Collapse  title= "Description" content= {appart.description}/>

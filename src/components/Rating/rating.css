@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.rating .icon {
+  height: 24px;
+  margin: 5px;
+}
+
+@media (min-width: 280px) and (max-width: 374px) {
+  .rating-icon {
+    height: 15px;
+  }
+}
+/*Mobile taille inférieure*/
+@media (min-width: 375px) and (max-width: 766px) {
+  .rating-icon {
+    height: 15px;
+  }
+}
+/* Mobile */
+@media (max-width: 768px) {
+  .rating-icon {
+    height: 15px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .rating-icon {
+    height: 20px;
+  }
+}/*# sourceMappingURL=rating.css.map */

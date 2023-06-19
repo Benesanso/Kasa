@@ -27,9 +27,9 @@ const collapseAbout = [
 function banner() {
   return (
     <div className=' main-about'>
-        <article className='banner-about'>
-          <img className='banner-img' src={About} alt='Vue des montagnes'/>
-          <img className='banner-img-mobile' src={AboutMobile} alt='Vue des montagnes'/>
+        <article className='about'>
+          <img className='img' src={About} alt='Vue des montagnes'/>
+          <img className='mobile' src={AboutMobile} alt='Vue des montagnes'/>
         </article>
      
       <section className='section-about'>
