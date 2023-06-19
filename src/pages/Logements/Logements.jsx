@@ -9,15 +9,20 @@ import './logements.scss'
 
 const Logement = () => {
   const {logementId} = useParams()
+
+  // Recherche de l'appartement correspondant à l'ID
    const appart = logements.find((appart)=>appart.id === logementId)
-  return appart ? (
+   return appart ? ( /* Si l'appartement existe */ 
    <main>
+      {/* Composant Carrousel */}
       <Carrousel appartPicture={appart.pictures}/>
 
+      {/* section détail du logement */}
       <section className='location'>
         <div className='header'>
           <p className='appart' >{appart.title}</p>
           <p className='city' >{appart.location}</p>
+          {/* Composant Tag */}
           <Tag appartTag={appart.tags}/>
         </div>
 
@@ -27,6 +32,7 @@ const Logement = () => {
             <img className='picture' src={appart.host.picture} alt="" />
           </div>
           <div className='notation'>
+            {/* Composant Rating */}
             <Rating rating={appart.rating} /> 
           </div>
         </div>
@@ -34,6 +40,7 @@ const Logement = () => {
 
       <div className='location-info'>
         <div className='collapse-container'>
+          {/* Emplacement des collapses */}
           <Collapse  title= "Description" content= {appart.description}/>
         </div>
         <div className='collapse-container'>
@@ -46,6 +53,7 @@ const Logement = () => {
    
     </main>
   ):(
+    /* Si l'appartement n'existe pas */
     <Navigate replace to="../../components/ErrorPage/ErrorPage" /> 
   )
 };

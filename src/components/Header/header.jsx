@@ -6,9 +6,11 @@ import './header.scss';
 function Header(){
     return(
     <header className="container">
+        {/* Logo avec un lien vers la page d'accueil */}
         <Link to="/">
-        <img className='LOGO' src={logo} alt="logo Kasa" />
+            <img className='LOGO' src={logo} alt="logo Kasa" />
         </Link>
+        {/* Navigation entre les pages */}
         <nav className='navbar'>
             <Link className='link-nav' to="/">Accueil</Link>
             <Link className='link-nav' to ="/About">À propos</Link>
