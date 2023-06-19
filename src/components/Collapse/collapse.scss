@@ -1,77 +1,73 @@
 /*Desktop*/
 .collapse {
-    flex-direction:column;
+    flex-direction: column;
     display: flex;
-    padding: 0 12%;
+    padding: 0 6%;
     margin-top: 20px;
     width: 100%;
-}
+  
+    & .header {
+      justify-content: flex-end;
+      background-color: #FF6060;
+      border-radius: 5px;
+      color: white;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      border: none;
 
-.collapse-header {
-    justify-content:flex-end;
-    background-color: #FF6060;
-    border-radius: 5px;
-    color: white;
-    height: 52px;
-    display: flex;
-    align-items: center;
-    border: none; 
-}
+      & .icon {
+        padding-right: 20px;
+        padding-left: 20px;
+        height: 30px;
+        cursor: pointer;
+        transition: transform 0.3s ease; /* Effet visuel de rotation */
+      }
 
-.collapse-title {
-    display: flex;
-    margin: 7px 0px 0px 0px;
-    color: white;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    align-items:flex-start;
-    padding-left: 18px;
-    line-height: 142.6%;
-    position: absolute;
-}
+      & .rotate {
+        transform: rotate(180deg);
+      }
+    
+    }
 
-.collapse-content-container {
-    background-color: #F7F7F7;
-    border-radius: 10px;
-    display: flex;
-    height: auto;  
-}
+    & .title {
+      display: flex;
+      margin: 7px 0px 0px 0px;
+      color: white;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      align-items: flex-start;
+      padding-left: 18px;
+      line-height: 142.6%;
+      position: absolute;
+    }
+  
+    & .content-container {
+      background-color: #F7F7F7;
+      border-radius: 10px;
+      display: flex;
+      height: auto;
 
-.collapse-text {
-    display: flex;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color:#FF6060;
-    line-height: 142.6%;
-    padding: 20px;
+      & .text {
+        display: flex;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #FF6060;
+        line-height: 142.6%;
+        padding: 20px;
+      }
+    }
 }
-
-.collapse-icon{
-    padding-right: 20px; 
-    padding-left: 20px;
-    height: 30px;
-    transform: rotate(180deg);
-    cursor: pointer;
-}
+ 
 
 /*Breakpoints*/
-@media (min-width: 1500px) and (max-width: 3000px){
-    .collapse{
-        padding: 0px;
-        margin: 0px; 
-}
-}
 
-@media (min-width: 1200px) and (max-width: 1900px){
-    .collapse{
-        padding: 0px;
-        margin: 0px; 
-}
-}
+
+
 
 /* Tablette */
 @media (min-width: 992px) and (max-width: 1199px){
@@ -80,9 +76,18 @@
         margin: 0px; 
 }
 }
+
+
+/*Tablette en mode portrait*/
+@media (min-width: 766px) and (max-width: 991px){
+    .collapse{
+        padding: 0px;
+        margin: 0px; 
+}
+}
 /* Mobile */
 @media (max-width: 768px){
- 
+   
     .collapse-title {
         font-size: 13px;
         margin-top: 5px;
@@ -98,45 +103,50 @@
     height: 16px;
 }
 }
-
-/*Tablette en mode portrait*/
-@media (min-width: 767px) and (max-width: 991px){
-    .collapse{
-        padding: 0px;
-        margin: 0px; 
-}
-}
-
 /*Mobile taille inférieure*/
 @media (min-width: 375px) and (max-width: 766px){
     .collapse{
         padding: 0px;
         margin: 0px;
         height: 40px;
+
+        & .title{
+            font-size: 13px;
+            margin-top: 10px;
+            padding-left:10px;
+        }
+
+        & .header .icon{
+            height: 20px; 
+        }
+        
+        & .content-container .text{
+            font-size: 13px; 
+        } 
 }
-    .collapse-title {
-        font-size: 13px;
-        margin-top: 10px;
-        padding-left:10px;
-}
+ 
 }
 
 @media (min-width: 280px) and (max-width: 374px){
     .collapse{
-        padding: 0px;  
-}
-    .collapse-header {
-        height:40px; 
-}
-    .collapse-title {
-        font-size: 13px;
-        margin-top: 10px;
-        padding-left:10px;
-}
-    .collapse-text {
+        padding: 0px; 
+
+        & .title {
+            font-size: 13px;
+            margin-top: 10px;
+            padding-left:10px;
+        }
+
+        & .header {
+            height:40px;
+
+            & .icon{
+                height: 20px; 
+            } 
+        } 
+
+        & .content-container .text{
         font-size: 13px; 
-}
-    .collapse-icon{
-        height: 20px; 
-}
+        }
+    } 
 }

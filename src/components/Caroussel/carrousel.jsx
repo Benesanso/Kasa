@@ -13,7 +13,7 @@ import { useState } from 'react';
     setCurrentSlide((currentSlide + appartPicture.length -1)% appartPicture.length);
     };
 
-    const shouldRenderButtons = appartPicture.length > 1;
+  const shouldRenderButtons = appartPicture.length > 1;
 
   return (
     <div className="carousel">

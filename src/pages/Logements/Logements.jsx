@@ -24,15 +24,15 @@ const Logement = () => {
           </div>
         </div>
 
-      <div className='location-host'>
-        <div className='host'>
-          <div className='host-name'>{appart.host.name} </div> 
-          <img className='host-picture' src={appart.host.picture} alt="" />
+        <div className='location-host'>
+          <div className='host'>
+            <div className='host-name'>{appart.host.name} </div> 
+            <img className='host-picture' src={appart.host.picture} alt="" />
+          </div>
+          <div className='notation'>
+            <Rating rating={appart.rating} /> 
+          </div>
         </div>
-        <div className='notation'>
-          <Rating rating={appart.rating} /> 
-        </div>
-       </div>
       </section> 
       <div className='location-info'>
         <div className='collapse-container'>

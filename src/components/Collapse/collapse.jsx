@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronUp} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './collapse.scss'
 
@@ -11,16 +11,14 @@ function Collapse({ title, content, }) {
   };
  
   return (
-    <div className="collapse">
-      <h2 className='collapse-title'>{title}</h2>
-        <button className="collapse-header">
-          <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} className="collapse-icon" onClick={toggleCollapse} />
-        </button>
-          {isOpen && (
-        <div className="collapse-content-container">
-          <div className='collapse-content'>
-            <div className='collapse-text'>{content}</div>
-          </div>
+    <div className='collapse'>
+      <h2 className='title'>{title}</h2>
+      <button className={`header ${isOpen ? 'active' : ''}`} >
+        <FontAwesomeIcon icon={faChevronUp} className={`icon ${isOpen ? 'rotate' : ''}`} onClick={toggleCollapse} />
+      </button>
+      {isOpen && (
+        <div className="content-container">
+          <div className='text'>{content}</div>
         </div>
       )}
     </div>

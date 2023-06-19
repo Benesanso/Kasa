@@ -18,10 +18,10 @@ function Layout () {
         <div className='layout'>
             <Header />
             <Routes>
-            <Route path="/" element = {<Home Logements={apparts}/>} />
-            <Route path="/about" element = {<About />} />
-            <Route path="/logements/:logementId" element={<Logement Logements={apparts}/>} />
-            <Route path="/*" element={<ErrorPage />} />
+                <Route path="/" element = {<Home Logements={apparts}/>} />
+                <Route path="/about" element = {<About />} />
+                <Route path="/logements/:logementId" element={<Logement Logements={apparts}/>} />
+                <Route path="/*" element={<ErrorPage />} />
             </Routes>
             <Footer />
         </div>
