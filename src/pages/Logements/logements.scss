@@ -41,8 +41,10 @@
     & .host{
         display: flex;
         align-items: center;
+        text-align: right;
         width: 85%;
         margin-left: 30px;
+        gap: 10px;
 
         & .name{
             color: #FF6060;
@@ -60,8 +62,9 @@
 }
 
 .notation{
-    margin-left: 60px;
+    margin-left: 20px;
     width: 85%;
+    text-align: right;
 }
 
 .location-info{
