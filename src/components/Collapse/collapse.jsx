@@ -21,8 +21,8 @@ function Collapse({ title, content, }) {
 
       {/* Contenu du collapse */}
       {isOpen && (
-        <div className="content-container">
-          <div className='text'>{content}</div>
+           <div className="content-container">
+          <div className={`text ${isOpen ? 'fade-in' : ''}`}>{content}</div>
         </div>
       )}
     </div>
