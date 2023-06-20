@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { faChevronUp} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Chevron from '../../assets/VectorHaut.png';
 import './collapse.scss'
 
 function Collapse({ title, content, }) {
@@ -16,9 +15,10 @@ function Collapse({ title, content, }) {
       {/* Titre du collapsible */}
       <h2 className='title'>{title}</h2>
       {/* Bouton d'expansion/réduction */}
-      <button className={`header ${isOpen ? 'active' : ''}`} >
-        <FontAwesomeIcon icon={faChevronUp} className={`icon ${isOpen ? 'rotate' : ''}`} onClick={toggleCollapse} />
+      <button className={`header ${isOpen ? 'active' : ''}`}>
+        <img src={Chevron} className={`icon ${isOpen ? 'rotate' : ''}`} onClick={toggleCollapse} alt="Flèche" />
       </button>
+
       {/* Contenu du collapse */}
       {isOpen && (
         <div className="content-container">

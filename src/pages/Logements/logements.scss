@@ -82,27 +82,28 @@
 /*Breakpoint*/
 @media (min-width: 1200px) and (max-width: 1500px){
     .location{
-        padding: 0px;
-        margin: 0px 10px 0px 30px;
-}
-    .title-appart {
-        margin-left: 50px;
-}
-    .title-city{
-        margin-left: 50px;
+        margin-right: 0px;
+        padding: 0px 6%;
+        margin-left: 70px;
+
+        & .appart {
+            margin-left: 50px;
+        }
+        
+        & .city{
+            margin-left: 0px;
+        }
 }
     .location-host{
+        gap: 80px;
         margin-right: 60px;
 }
     .notation{
-        margin-left: 40px;
-}
-    .tags{
         margin-left: 50px;
-} 
+}
     .location-info{
         gap: 20px;
-        margin: 0px 50px 0px 70px;
+        margin-top: 50px;
 }
 }
 

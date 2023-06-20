@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import ChevronLeft from '../../assets/Vector-Left.png'
+import ChevronRight from '../../assets/Vector-Right.png'
 import './caroussel.scss';
 import { useState } from 'react';
 
@@ -25,12 +25,12 @@ import { useState } from 'react';
       {/* Boutons de navigation */}
       {shouldRenderButtons && (
         <>
-          <button className="prev" onClick={prevSlide}>
-            <FontAwesomeIcon icon={faChevronLeft} className="chevron-icon-left" />
-          </button>
-          <button className="next" onClick={nextSlide}>
-            <FontAwesomeIcon icon={faChevronRight} className="chevron-icon-right" />
-          </button>
+        <button className="prev" onClick={prevSlide}>
+          <img src={ChevronLeft} className="chevron-icon-left" alt='chevron gauche' />
+        </button>
+        <button className="next" onClick={nextSlide}>
+          <img src={ChevronRight} className="chevron-icon-right" alt='chevron droit' />
+        </button>
         </>
       )}
 
