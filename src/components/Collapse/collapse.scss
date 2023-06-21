@@ -5,29 +5,28 @@
     padding: 0 6%;
     margin-top: 20px;
     width: 100%;
-  
+   
     & .header {
       justify-content: flex-end;
       background-color: #FF6060;
-      border-radius: 5px;
+      border-radius: 10px;
       color: white;
       height: 52px;
       display: flex;
       align-items: center;
       border: none;
-
+     
       & .icon {
         padding-right: 20px;
         padding-left: 20px;
         height: 15px;
         cursor: pointer;
-        transition: transform 0.3s ease; /* Effet visuel de rotation */
+        transition: transform 0.5s ease; /* Effet visuel de rotation */
       }
 
       & .rotate {
         transform: rotate(180deg);
       }
-    
     }
 
     & .title {
@@ -50,12 +49,14 @@
       display: flex;
       height: auto;
       overflow: hidden;
-      transition: max-height 0.3s ease;
-
+      transition: transform 0.5s ease;
+      &.slide-out {
+        animation: slide-out 0.5s ease;
+      }
       & .fade-in {
         animation: fade-in 0.5s ease forwards;
       }
-
+     
       & .text {
         display: flex;
         font-family: "Montserrat";
@@ -65,7 +66,6 @@
         color: #FF6060;
         line-height: 142.6%;
         padding: 20px;
-     
         transition: opacity 0.3s ease;
       }
     }
@@ -80,12 +80,24 @@
         transform: translateY(0);
     }
 }
-
+@keyframes slide-out {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      
+     
+  transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
 /*Breakpoints*/
 /* Tablette */
 @media (min-width: 992px) and (max-width: 1199px){
     .collapse{
-        
+        margin-top: 10px;
+
         & .title{
             font-size: 18px;
             margin-top: 15px;
@@ -131,7 +143,8 @@
         margin: 0px;
 
         & .header {
-            height: 30px; 
+            height: 30px;
+            border-radius: 5px; 
         }
 
         & .title{
@@ -162,6 +175,7 @@
 
         & .header {
             height:30px;
+            border-radius: 5px;
 
             & .icon{
                 height: 10px; 

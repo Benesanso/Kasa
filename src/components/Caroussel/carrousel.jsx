@@ -29,7 +29,7 @@ import { useState } from 'react';
           <img src={ChevronLeft} className="chevron-icon-left" alt='chevron gauche' />
         </button>
         <button className="next" onClick={nextSlide}>
-          <img src={ChevronRight} className="chevron-icon-right" alt='chevron droit' />
+          <img src={ChevronRight} className="chevron-icon-right" alt='chevron gauche' />
         </button>
         </>
       )}

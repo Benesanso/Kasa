@@ -39,7 +39,7 @@
   cursor: pointer;
   top: 40%;
   right: 0;
-  padding-right: 220px;
+  padding-right: 240px;
   z-index: 2;
 }
 .next .chevron-icon-right {
@@ -158,6 +158,9 @@
     height: 30px;
     color: white;
   }
+  .number-image {
+    display: none;
+  }
 }
 /*Mobile taille inférieure*/
 @media (min-width: 375px) and (max-width: 766px) {
@@ -174,7 +177,7 @@
     height: 255px;
   }
   .next {
-    padding-right: 30px;
+    padding-right: 40px;
   }
   .next .chevron-icon-right {
     position: absolute;
@@ -185,6 +188,9 @@
     position: absolute;
     height: 30px;
     color: white;
+  }
+  .number-image {
+    display: none;
   }
 }
 @media (min-width: 280px) and (max-width: 374px) {
@@ -213,5 +219,8 @@
     position: absolute;
     height: 30px;
     color: white;
+  }
+  .number-image {
+    display: none;
   }
 }/*# sourceMappingURL=caroussel.css.map */

@@ -25,7 +25,8 @@
 
 .link-nav:focus,
 .link-nav:active {
-  text-decoration: underline !important;
+  -webkit-text-decoration: underline solid !important;
+          text-decoration: underline solid !important;
   color: #FF6060 !important;
 }
 

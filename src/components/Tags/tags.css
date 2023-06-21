@@ -4,7 +4,7 @@
   display: flex;
   padding: 0px;
   margin-top: 23px;
-  margin-bottom: 23px;
+  margin-left: 0px;
 }
 .tags .tag {
   background-color: #FF6060;
@@ -23,28 +23,36 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .tags {
     margin-top: 15px;
+    gap: 30px;
   }
   .tags .tag {
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 /*Mobile taille inférieure*/
 @media (min-width: 375px) and (max-width: 767px) {
   .tags {
     margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 7px;
   }
   .tags .tag {
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 @media (min-width: 280px) and (max-width: 374px) {
   .tags {
     margin-top: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    gap: 20px;
   }
   .tags .tag {
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 13px;
+    margin-top: 10px;
+    margin: 0px;
   }
 }/*# sourceMappingURL=tags.css.map */

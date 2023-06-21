@@ -12,8 +12,9 @@ function Header(){
         </Link>
         {/* Navigation entre les pages */}
         <nav className='navbar'>
-            <Link className='link-nav' to="/">Accueil</Link>
-            <Link className='link-nav' to ="/About">À propos</Link>
+            {/* Lien vers la page avec une classe active si l'URL */}
+            <Link className={`link-nav ${window.location.pathname === '/' ? 'active' : ''}`} to="/">Accueil</Link>
+            <Link className={`link-nav ${window.location.pathname === '/About' ? 'active' : ''}`} to="/about">À propos</Link>
         </nav>
     </header>
   );

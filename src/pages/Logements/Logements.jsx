@@ -18,7 +18,8 @@ const Logement = () => {
       <Carrousel appartPicture={appart.pictures}/>
 
       {/* section détail du logement */}
-      <section className='location'>
+      <section className='location-main'>
+       <div className='location'>
         <div className='header'>
           <p className='appart' >{appart.title}</p>
           <p className='city' >{appart.location}</p>
@@ -36,7 +37,8 @@ const Logement = () => {
             <Rating rating={appart.rating} /> 
           </div>
         </div>
-      </section> 
+        </div>
+     
 
       <div className='location-info'>
         <div className='collapse-container'>
@@ -49,8 +51,8 @@ const Logement = () => {
               </ul>} />
         </div> 
       </div>
-
-   
+      
+      </section> 
     </main>
   ):(
     /* Si l'appartement n'existe pas */
