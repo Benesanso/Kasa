@@ -85,11 +85,12 @@
     height: 15px;
   }
   .collapse .content-container .text {
+    margin-top: 20px;
     font-size: 18px;
   }
 }
 /*Tablette en mode portrait*/
-@media (min-width: 766px) and (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 991px) {
   .collapse .title {
     font-size: 13px;
     margin-top: 15px;
@@ -107,11 +108,13 @@
   .collapse {
     padding: 0px;
     margin: 0px;
-    height: 40px;
+  }
+  .collapse .header {
+    height: 30px;
   }
   .collapse .title {
     font-size: 13px;
-    margin-top: 10px;
+    margin-top: 5px;
     padding-left: 10px;
   }
   .collapse .header .icon {
@@ -127,11 +130,11 @@
   }
   .collapse .title {
     font-size: 13px;
-    margin-top: 10px;
+    margin-top: 5px;
     padding-left: 10px;
   }
   .collapse .header {
-    height: 40px;
+    height: 30px;
   }
   .collapse .header .icon {
     height: 10px;
