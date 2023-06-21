@@ -6,16 +6,24 @@
     
 }
 @media (min-width: 280px) and (max-width: 374px){
-    .rating-icon{
-        height: 15px;
-}
+    .rating{
+        
+        & .icon{
+            height: 13px;
+            margin: 5px 5px 5px 5px;
+        }
+    }
 }
 
 /*Mobile taille inférieure*/
 @media (min-width: 375px) and (max-width: 766px){
-    .rating-icon{
-        height: 15px;
-}
+    .rating{
+        
+        & .icon{
+            height: 13px;
+            margin: 5px 5px 5px 5px;
+        }
+    }
 }
 
 /* Mobile */

@@ -24,52 +24,19 @@
     
 }
 
-
-
-
 /*Breakpoints*/
-
-/* Tablette */
-@media (min-width: 992px) and (max-width: 1199px){
-    .footer{
-        height: 250px;
-    }
-    .footer-logo{
-        width: 20%;
-    }
-}
-
-/* Tablette plus petite */
-@media (max-width: 992px){
+/* Mobile */
+@media (min-width: 768px) and (max-width: 991px){
     .footer{
         height: 209px;
-}
-    .footer-info{
-        font-size: 12px;
-}
-}
-    
-/* Mobile */
-@media (max-width: 768px){
-    .footer{
-        height: 250px;
-        width: 100%;
         margin-top: 30px;
-}
-    .footer-logo{
-        width: 20%;
-        margin-top: 90px;
-        margin-bottom: 10px;
-}
 
-    .footer-info {
-        width: 15%;
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 17px;
-        letter-spacing: 0em;
-        text-align: center; 
-}
+        & .logo{
+            width: 20%;
+            margin-top: 70px;
+            margin-bottom: 20px;
+        }
+    } 
 }
 
 /*Mobile taille inférieure*/
@@ -78,41 +45,45 @@
         height: 250px;
         width: 100%;
         margin-top: 30px;
-}
-    .footer-logo{
-        width: 25%;
-        margin-top: 100px;
-        margin-bottom: 10px;
-}
-    .footer-info {
-        width: 35%;
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 17px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin: 0px;
-}
+
+        & .logo{
+            width: 25%;
+            margin-top: 100px;
+            margin-bottom: 10px;
+        }
+
+        & .info {
+            width: 35%;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: center;
+            margin: 0px;
+        }
+    }   
 }
 
 @media (min-width: 280px) and (max-width: 374px){
     .footer{
         height: 250px;
-        width: 100%;
+        width: 98%;
         margin-top: 30px;
-}
-    .footer-logo{
-        width: 25%;
-        margin-top: 100px;
-        margin-bottom: 10px;
-}
-    .footer-info {
-        width: 35%;
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 17px;
-        letter-spacing: 0em;
-        text-align: center;
-        margin: 0px;
-}
+
+        & .logo{
+            width: 25%;
+            margin-top: 100px;
+            margin-bottom: 10px;
+        }
+
+        & .info {
+            width: 35%;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: center;
+            margin: 0px;
+            }
+    }
 }

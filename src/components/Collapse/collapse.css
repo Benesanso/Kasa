@@ -20,7 +20,7 @@
 .collapse .header .icon {
   padding-right: 20px;
   padding-left: 20px;
-  height: 30px;
+  height: 15px;
   cursor: pointer;
   transition: transform 0.3s ease; /* Effet visuel de rotation */
 }
@@ -45,6 +45,11 @@
   border-radius: 10px;
   display: flex;
   height: auto;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.collapse .content-container .fade-in {
+  animation: fade-in 0.5s ease forwards;
 }
 .collapse .content-container .text {
   display: flex;
@@ -55,38 +60,46 @@
   color: #FF6060;
   line-height: 142.6%;
   padding: 20px;
+  transition: opacity 0.3s ease;
 }
 
+/*anime l'opacité et le défilement du texte*/
+@keyframes fade-in {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /*Breakpoints*/
 /* Tablette */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .collapse {
-    padding: 0px;
-    margin: 0px;
+  .collapse .title {
+    font-size: 18px;
+    margin-top: 15px;
+    padding-left: 10px;
+  }
+  .collapse .header .icon {
+    height: 15px;
+  }
+  .collapse .content-container .text {
+    font-size: 18px;
   }
 }
 /*Tablette en mode portrait*/
 @media (min-width: 766px) and (max-width: 991px) {
-  .collapse {
-    padding: 0px;
-    margin: 0px;
-  }
-}
-/* Mobile */
-@media (max-width: 768px) {
-  .collapse-title {
+  .collapse .title {
     font-size: 13px;
-    margin-top: 5px;
+    margin-top: 15px;
     padding-left: 10px;
   }
-  .collapse-header {
-    height: 30px;
-    border-radius: 5px;
+  .collapse .header .icon {
+    height: 10px;
   }
-  .collapse-icon {
-    padding-right: 20px;
-    padding-left: 20px;
-    height: 16px;
+  .collapse .content-container .text {
+    font-size: 15px;
   }
 }
 /*Mobile taille inférieure*/
@@ -102,7 +115,7 @@
     padding-left: 10px;
   }
   .collapse .header .icon {
-    height: 20px;
+    height: 10px;
   }
   .collapse .content-container .text {
     font-size: 13px;
@@ -121,7 +134,7 @@
     height: 40px;
   }
   .collapse .header .icon {
-    height: 20px;
+    height: 10px;
   }
   .collapse .content-container .text {
     font-size: 13px;

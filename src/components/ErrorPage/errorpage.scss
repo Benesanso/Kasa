@@ -32,29 +32,68 @@
     margin-bottom: 100px;
 }
 
-/* Tablette */
-@media (max-width: 992px){
-.error-title{
-    font-size: 96px;
-    font-weight: 700;
-    line-height: 410.69px;
-    margin : 0;
-}
-.error-text{
-    font-size: 28px;
-    line-height: 25.67px;
-}
+/*Breakpoints*/
+/*Tablette en mode portrait*/
+@media (min-width: 766px) and (max-width: 991px){
+    .error-page{
+
+        & .title{
+            height: 300px;
+            font-size: 96px;
+            margin-bottom: 30px;
+        }
+    
+        & .text{
+            font-size: 18px;
+            text-align: center;
+        }  
+    }
+
+    .back-home{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    } 
 }
 
-/* Mobile */
-@media (max-width: 768px){
-.error-text{
-    font-size: 18px;
-    line-height: 25.67px;
-    text-align: center;
-    padding: 10px;
+/*Mobile taille inférieure*/
+@media (min-width: 375px) and (max-width: 766px){
+    .error-page{
+
+        & .title{
+            height: 300px;
+            font-size: 96px;
+            margin-bottom: 30px;
+        }
+    
+        & .text{
+            font-size: 18px;
+            text-align: center;
+        }  
+    }
+
+    .back-home{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    } 
 }
-.back-home{
-    font-size: 14px;
-}
+
+@media (min-width: 280px) and (max-width: 374px){
+    .error-page{
+
+        & .title{
+            height: 300px;
+            font-size: 96px;
+            margin-bottom: 30px;
+        }
+    
+        & .text{
+            font-size: 18px;
+            text-align: center;
+        }  
+    }
+
+    .back-home{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
 }

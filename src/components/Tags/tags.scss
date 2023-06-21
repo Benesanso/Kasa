@@ -19,4 +19,38 @@
     }
 }
 
+/* Mobile */
+@media (min-width: 768px) and (max-width: 991px){
+    .tags{
+        margin-top: 15px;
 
+        & .tag{
+            border-radius: 5px;
+            font-size: 10px;
+        }
+    }  
+}
+
+/*Mobile taille inférieure*/
+@media (min-width: 375px) and (max-width: 767px){
+    .tags{
+        margin-top: 15px;
+
+        & .tag{
+            border-radius: 5px;
+            font-size: 10px;
+        }
+    }  
+
+}
+
+@media (min-width: 280px) and (max-width: 374px){
+    .tags{
+        margin-top: 10px;
+
+        & .tag{
+            border-radius: 5px;
+            font-size: 10px;
+        }
+    }  
+}

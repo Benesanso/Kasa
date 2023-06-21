@@ -81,51 +81,48 @@
     }
 }
 
-  
-  
-  
-  
-  
-  
 /*Breakpoints*/
-
-
-
-
 /* Tablette */
 @media (min-width: 992px) and (max-width: 1199px){
     .collapse{
-        padding: 0px;
-        margin: 0px; 
-}
+        
+        & .title{
+            font-size: 18px;
+            margin-top: 15px;
+            padding-left:10px;
+        }
+
+        & .header .icon{
+            height: 15px; 
+        }
+        
+        & .content-container .text{
+            font-size: 18px; 
+        } 
+    } 
 }
 
 
 /*Tablette en mode portrait*/
 @media (min-width: 766px) and (max-width: 991px){
     .collapse{
-        padding: 0px;
-        margin: 0px; 
+        
+        & .title{
+            font-size: 13px;
+            margin-top: 15px;
+            padding-left:10px;
+        }
+
+        & .header .icon{
+            height: 10px; 
+        }
+        
+        & .content-container .text{
+            font-size: 15px; 
+        } 
+    } 
 }
-}
-/* Mobile */
-@media (max-width: 768px){
-   
-    .collapse-title {
-        font-size: 13px;
-        margin-top: 5px;
-        padding-left:10px;
-}
-.collapse-header {
-    height:30px;
-    border-radius: 5px;
-}
-.collapse-icon{
-    padding-right: 20px; 
-    padding-left: 20px;
-    height: 16px;
-}
-}
+
 /*Mobile taille inférieure*/
 @media (min-width: 375px) and (max-width: 766px){
     .collapse{
@@ -140,14 +137,13 @@
         }
 
         & .header .icon{
-            height: 20px; 
+            height: 10px; 
         }
         
         & .content-container .text{
             font-size: 13px; 
         } 
-}
- 
+    } 
 }
 
 @media (min-width: 280px) and (max-width: 374px){
@@ -164,7 +160,7 @@
             height:40px;
 
             & .icon{
-                height: 20px; 
+                height: 10px; 
             } 
         } 
 

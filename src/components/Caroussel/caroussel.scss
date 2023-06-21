@@ -64,7 +64,7 @@
     color: white;   
 }
 }
-
+ 
 .number-image {
     color: white;
     position: absolute;
@@ -77,107 +77,184 @@
 }
 
 /*Breakpoint*/
+@media (min-width: 1200px) and (max-width: 1500px){
+    .carousel {
+        height: 255px;
+        padding: 0px 10%;  
+        margin-left: 2px;
+        
+        & .images{
+        height: 255px;
+        }
+    }
 
-/* Tablette */
+    .slider-image {
+        border-radius: 25px;
+        height: 255px;
+    }
+
+    .next {
+        padding-right: 180px;
+     
+        & .chevron-icon-right{
+            position: absolute;
+            height: 30px;
+            color: white;
+        }
+    }
+
+    .prev {
+     
+        & .chevron-icon-left{
+        position: absolute;
+        height: 30px;
+        color: white;   
+    }
+    } 
+}
+
 @media (min-width: 992px) and (max-width: 1199px){
-    .carousel{
-    margin-bottom: 25px;
-    margin-left: 50px;
-    padding: 0px;
+    .carousel {
+        height: 255px;
+        padding: 0px 5%;  
+        margin-left: 2px;
+        
+        & .images{
+        height: 255px;
+        }
+    }
+
+    .slider-image {
+        border-radius: 25px;
+        height: 255px;
+    }
+
+    .next {
+        padding-right: 90px;
+     
+        & .chevron-icon-right{
+            position: absolute;
+            height: 30px;
+            color: white;
+        }
+    }
+
+    .prev {
+     
+        & .chevron-icon-left{
+        position: absolute;
+        height: 30px;
+        color: white;   
+    }
+    } 
 }
+/*Tablette en mode portrait*/
+@media (min-width: 766px) and (max-width: 991px){
+    .carousel {
+        height: 255px;
+        padding: 0px 5%;  
+        margin-left: 2px;
+        
+        & .images{
+        height: 255px;
+        }
+    }
+
+    .slider-image {
+        border-radius: 10px;
+        height: 255px;
+    }
+
+    .next {
+        padding-right: 70px;
+     
+        & .chevron-icon-right{
+            position: absolute;
+            height: 30px;
+            color: white;
+        }
+    }
+
+    .prev {
+     
+        & .chevron-icon-left{
+        position: absolute;
+        height: 30px;
+        color: white;   
+    }
+    } 
 }
 
-/* Mobile */
-@media (min-width: 768px) and (max-width: 991px){
-    .carousel{
-        margin-left: 30px;
-        padding: 0px;
-        margin-bottom: 20px;
-}
-    .number-image {
-        font-size: 20px; 
-}
-    .next {
-        top: 40%;
-        padding-right: 40px;
-}
-    .prev{
-        top: 40%;
-        padding-left: 10px;
-}
-    .chevron-icon-left{
-        height: 30px;
-}
-    .chevron-icon-right{
-        height: 30px;
-}
-    .number-image {
-        left: 45%;   
-}
-}
- 
 /*Mobile taille inférieure*/
-@media (min-width: 375px) and (max-width: 767px){
-    .carousel{
+@media (min-width: 375px) and (max-width: 766px){
+    .carousel {
         height: 255px;
-        margin: 0px;
-        margin-left: 20px;
-        padding: 0px;
-}
-    .carousel-images{
+        padding: 0px 2%;  
+        margin-left: 2px;
+        
+        & .images{
         height: 255px;
+        }
+    }
+
+    .slider-image {
         border-radius: 10px;
-}
-    .slider-image{
         height: 255px;
-}
+    }
+
     .next {
-        top: 40%;
-        padding-right: 40px;
-}
-    .prev{
-        top: 40%;
-        padding-left: 10px;
-}
-    .chevron-icon-left{
+        padding-right: 30px;
+     
+        & .chevron-icon-right{
+            position: absolute;
+            height: 30px;
+            color: white;
+        }
+    }
+
+    .prev {
+     
+        & .chevron-icon-left{
+        position: absolute;
         height: 30px;
-}
-    .chevron-icon-right{
-        height: 30px;
-}
-    .number-image {
-        left: 45%;   
-}
+        color: white;   
+    }
+    } 
 }
 
 @media (min-width: 280px) and (max-width: 374px){
-    .carousel{
+    .carousel {
+        width: 97%;
         height: 255px;
-        margin: 0px 0px 20px 15px;
-        padding: 0px;
-        width: 92%;
-}
-    .carousel-images{
+        padding: 0px 2%;  
+        margin-left: 2px;
+        
+        & .images{
         height: 255px;
+        }
+    }
+
+    .slider-image {
         border-radius: 10px;
-}
+        height: 255px;
+    }
+
     .next {
-        top: 40%;
         padding-right: 40px;
-}
-    .prev{
-        top: 40%;
-        padding-left: 10px;
-}
-    .chevron-icon-left{
-        height: 30px;
-}
-    .chevron-icon-right{
-        height: 30px;
-}
-    .number-image {
-        left: 45%;   
-}
-}
+     
+        & .chevron-icon-right{
+            position: absolute;
+            height: 30px;
+            color: white;
+        }
+    }
 
-
+    .prev {
+     
+        & .chevron-icon-left{
+        position: absolute;
+        height: 30px;
+        color: white;   
+    }
+    }    
+}
