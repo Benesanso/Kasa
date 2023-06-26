@@ -56,7 +56,7 @@ const Logement = () => {
     </main>
   ):(
     /* Si l'appartement n'existe pas */
-    <Navigate replace to="../../components/ErrorPage/ErrorPage" /> 
+    <Navigate replace to="./pages/ErrorPage/ErrorPage" /> 
   )
 };
 export default Logement;

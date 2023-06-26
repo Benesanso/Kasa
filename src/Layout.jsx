@@ -6,7 +6,7 @@ import About from './pages/About/about'
 import Logement from './pages/Logements/Logements'
 import logements from './data/logements.json';
 import { useEffect, useState } from 'react'
-import ErrorPage from './components/ErrorPage/ErrorPage';
+import ErrorPage from './pages/ErrorPage/ErrorPage';
 import './scss/reset.scss'
 
 function Layout () {

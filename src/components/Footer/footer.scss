@@ -41,13 +41,13 @@
 /*Mobile taille inférieure*/
 @media (min-width: 375px) and (max-width: 766px){
     .footer{
-        height: 250px;
+        height: 280px;
         width: 100%;
         margin-top: 40px;
 
         & .logo{
             width: 25%;
-            margin-top: 100px;
+            margin-top: 110px;
             margin-bottom: 10px;
         }
 
@@ -65,13 +65,13 @@
 
 @media (min-width: 280px) and (max-width: 374px){
     .footer{
-        height: 200px;
+        height: 240px;
         width: 98%;
-        margin-top: 15px;
+        margin-top: 20px;
 
         & .logo{
             width: 25%;
-            margin-top: 70px;
+            margin-top: 80px;
             margin-bottom: 10px;
         }
 
