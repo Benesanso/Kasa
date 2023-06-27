@@ -32,14 +32,14 @@ function banner() {
         <img className='img' src={About} alt='Vue des montagnes'/>
         <img className='mobile' src={AboutMobile} alt='Vue des montagnes'/>
       </article>
-        {/* Emplacement des collapses */}
-        <section className='section-about'>
-          {collapseAbout.map((collapse, index) => (
-          <div className='collapse-about-container' key={index}>
-            <Collapse title={collapse.title} content={collapse.content} />
-          </div>
-          ))}
-        </section>
+      {/* Emplacement des collapses */}
+      <section className='section-about'>
+        {collapseAbout.map((collapse, index) => (
+        <div className='collapse-about-container' key={index}>
+          <Collapse title={collapse.title} content={collapse.content} />
+        </div>
+        ))}
+      </section>
     </div>
   );
 }

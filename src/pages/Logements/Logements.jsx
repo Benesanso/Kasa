@@ -8,11 +8,12 @@ import Tag from '../../components/Tags/Tags';
 import './logements.scss'
 
 const Logement = () => {
-  const {logementId} = useParams()
+const {logementId} = useParams()
 
-  // Recherche de l'appartement correspondant à l'ID
-   const appart = logements.find((appart)=>appart.id === logementId)
-   return appart ? ( /* Si l'appartement existe */ 
+// Recherche de l'appartement correspondant à l'ID
+const appart = logements.find((appart)=>appart.id === logementId)
+
+  return appart ? ( /* Si l'appartement existe */ 
    <main>
       {/* Composant Carrousel */}
       <Carrousel appartPicture={appart.pictures}/>
@@ -37,7 +38,7 @@ const Logement = () => {
             <Rating rating={appart.rating} /> 
           </div>
         </div>
-        </div>
+      </div>
      
 
       <div className='location-info'>

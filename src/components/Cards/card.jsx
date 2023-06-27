@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Cards/card.scss';
 
- function Card({ cover, title}) {
+function Card({ cover, title}) {
   return (
     <div className='card-location'>
       {/* Image de couverture de la carte */}
