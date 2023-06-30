@@ -47,7 +47,7 @@ const appart = logements.find((appart)=>appart.id === logementId)
           <Collapse  title= "Description" content= {appart.description}/>
         </div>
         <div className='collapse-container'>
-          <Collapse title="Equipement" content={<ul>{appart.equipments.map((equipment) => 
+          <Collapse title="Equipements" content={<ul>{appart.equipments.map((equipment) => 
             <li key={equipment}>{equipment}</li>)}
               </ul>} />
         </div> 
