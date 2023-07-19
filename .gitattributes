@@ -1,0 +1,6 @@
+# Set the default EOL type to LF for all files
+* text eol=lf
+
+# Explicitly set CRLF for specific files or patterns if needed
+*.css text eol=crlf
+*.js text eol=crlf
