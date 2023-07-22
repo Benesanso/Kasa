@@ -1,6 +1,6 @@
 import React from 'react';
 import About from '../../assets/background-about.png';
-import AboutMobile from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2 (1).png';
+import AboutMobile from '../../assets/kalen.png';
 import './about.scss';
 import Collapse from '../../components/Collapse/collapse'
 
